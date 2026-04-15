@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #94a3b8; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #64748b;
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #64748b;
+    text-transform: uppercase;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #64748b;
+}
+
+
+.main-content {
+    flex-grow: 1;
+    background-color: #94a3b8; 
+    padding: 20px;
+}
+
+.content-inner {
+    background-color: transparent;
+    color: white;
+}
+
+.login-body {
+    background-color: #f3f4f6; /* Warna latar belakang abu-abu sangat muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-card {
+    background: white;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Fokus input agar mirip seperti di foto (sedikit biru) */
+.login-card input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #edf2ff;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Biru cerah sesuai foto */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-card button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
